@@ -1,0 +1,40 @@
+url = 'https://marshemispheres.com/'
+
+browser.visit(url)
+
+# Create a list to hold the images and titles.
+hemisphere_image_urls = []
+
+# Get a list of all of the hemispheres
+links = browser.find_by_css('a.product-item img')
+
+# Next, loop through those links, click the link, find the sample anchor, return the href
+for i in range(len(links)):
+    hemisphere = {}
+    
+    # Find the image link 
+    
+    # Next, we find the Sample image anchor tag and extract the href
+    
+    # Get Hemisphere title
+    
+    # Append hemisphere object to list
+    
+    # Finally, we navigate backwards
+    browser.back()
+
+
+
+
+
+
+
+browser.find_by_tag('button')[1]
+
+
+
+# Parse the resulting html with soup
+
+# find the relative image url
+
+# Use the base url to create an absolute url
