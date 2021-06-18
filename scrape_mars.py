@@ -86,15 +86,15 @@ def scrape():
     browser.quit()
     
     # Creating dictionary for all of the scrapped info
-    mars_dic={
+    mars={
         "Mars_news_headlines": title,
-        "Mars_News_Teaser": teaser,
-        "Featured_Mars_Image": "N/A",
+        "Mars_News_Teasers": teaser,
+        "Featured_Mars_Image": "Not Available",
         "Mars_Facts": factsTableHtml,
-        "Mars_Hemispheres": hemis_image_urls,
-    }
+        "Mars_Hemispheres": hemisImages,
+        }
     # mars_dic = "Hello World"
-    return mars_dic
+    return mars
 
 if __name__ == "__main__":
     data = scrape()
