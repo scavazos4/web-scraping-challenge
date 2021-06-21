@@ -17,8 +17,8 @@ def index():
 
 # Route that will trigger the scrape function
 @app.route("/scrape")
-def scrape():
-    mars_scrape = scrape_mars.scrape()
+def scrape_all():
+    mars_scrape = scrape_mars.scrape_all()
     mongo.db.mars.update({}, mars_scrape, upsert=True)
     
     

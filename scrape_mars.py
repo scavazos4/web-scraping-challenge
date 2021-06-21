@@ -10,7 +10,7 @@ import time
 def init_browser():
     return Browser('chrome', headless=False)
 
-def scrape():
+def scrape_all():
     browser = init_browser()
 
     # NASA Mars News define and retrive
@@ -97,5 +97,5 @@ def scrape():
     return mars
 
 if __name__ == "__main__":
-    data = scrape()
+    data = scrape_all()
     print(data)
